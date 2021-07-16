@@ -68,7 +68,7 @@ def initscreen():
 
   displaycontrols(False)
 
-def displayprogress(progress):
+def displayprogress(seek,duration):
   progress = seek / duration * 370
   img = Image.new('RGBA', (370, 6))  
 
@@ -273,7 +273,7 @@ while True:
 
     if status != old_status:
       old_status = status
-      displayprogress(0)
+      displayprogress(0,1)
       if status == 'play':
         displaycontrols(True)
         scr.screenon()
