@@ -7,7 +7,7 @@ In order to run as the pi user to access the framebuffer, you'll need to add it 
 
 usermod -a -G video pi
 
-To start this at boot, create a service file and launch the bash script with it: 
+To start this at boot, create a service file and launch the Python script with it: 
 https://www.raspberrypi.org/documentation/linux/usage/systemd.md
 
 
